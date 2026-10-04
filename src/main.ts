@@ -29,8 +29,8 @@ app.innerHTML = `
   <div class="app-shell">
     <header class="topbar">
       <div>
-        <p class="eyebrow">MBA money, made clear</p>
-        <h1>HBS Budget</h1>
+        <p class="eyebrow">Log it. Know it. Move on.</p>
+        <h1>5 Seconds Budgeting</h1>
       </div>
       <span class="mode-badge ${isStandalone ? "mode-badge--installed" : ""}">
         ${isStandalone ? "Installed" : "Browser preview"}
@@ -44,8 +44,8 @@ app.innerHTML = `
           <aside class="install-card" aria-labelledby="install-title">
             <div class="install-card__icon" aria-hidden="true">↗</div>
             <div>
-              <p class="install-card__label">Install before using real data</p>
-              <h2 id="install-title">Add this app to your iPhone Home Screen</h2>
+              <p class="install-card__label">Install once, log fast</p>
+              <h2 id="install-title">Put 5 Seconds Budgeting on your Home Screen</h2>
               <p>In Safari, tap Share, choose <strong>Add to Home Screen</strong>, and keep <strong>Open as Web App</strong> turned on. Data entered in this browser tab may not transfer to the installed app.</p>
             </div>
           </aside>
@@ -136,7 +136,7 @@ app.innerHTML = `
 
         <div class="promise-row" aria-label="Product promises">
           <div><span aria-hidden="true">◉</span><strong>Local</strong><small>Your data stays on this device</small></div>
-          <div><span aria-hidden="true">⌁</span><strong>Fast</strong><small>Designed for ten-second entry</small></div>
+          <div><span aria-hidden="true">⌁</span><strong>Fast</strong><small>Built to keep money tracking moving</small></div>
         </div>
       </section>
 
@@ -178,23 +178,23 @@ app.innerHTML = `
         </div>
         <div class="metric-grid">
           <div class="metric-card"><p>Monthly run rate</p><strong id="monthly-run-rate">—</strong><small id="run-rate-months">Complete months only</small></div>
-          <div class="metric-card"><p>Funding outlook</p><strong id="funding-outlook">—</strong><small id="funding-label">Add MBA dates and funds</small></div>
+          <div class="metric-card"><p>Funding outlook</p><strong id="funding-outlook">—</strong><small id="funding-label">Add planning dates and funds</small></div>
         </div>
         <section class="projection-card" aria-labelledby="projection-title">
           <div class="projection-card__heading">
             <div>
               <p class="section-label">Forecast</p>
-              <h3 id="projection-title">MBA funding projection</h3>
+              <h3 id="projection-title">Long-range projection</h3>
             </div>
             <button class="text-button" id="edit-projection-settings" type="button">Edit inputs</button>
           </div>
           <div class="projection-grid">
             <div><small>Annual projection</small><strong id="annual-projection">—</strong></div>
-            <div><small>Remaining MBA spend</small><strong id="remaining-projection">—</strong></div>
-            <div><small>Total MBA projection</small><strong id="total-program-projection">—</strong></div>
-            <div><small>Actual MBA outflow</small><strong id="actual-program-outflow">—</strong></div>
+            <div><small>Remaining planned spend</small><strong id="remaining-projection">—</strong></div>
+            <div><small>Total plan projection</small><strong id="total-program-projection">—</strong></div>
+            <div><small>Actual period outflow</small><strong id="actual-program-outflow">—</strong></div>
           </div>
-          <p class="projection-assumptions" id="projection-assumptions">Add MBA dates to calculate a forecast.</p>
+          <p class="projection-assumptions" id="projection-assumptions">Add planning dates to calculate a forecast.</p>
         </section>
         <section class="breakdown-card" aria-labelledby="breakdown-title">
           <div class="breakdown-card__heading">
@@ -216,7 +216,7 @@ app.innerHTML = `
         </div>
         <div class="settings-list">
           <button id="open-categories" type="button"><span><strong>Categories</strong><small>Create and organize spending categories</small></span><b>›</b></button>
-          <button id="open-projection-settings" type="button"><span><strong>MBA dates and funds</strong><small id="projection-settings-summary">Set the period used by projections</small></span><b>›</b></button>
+          <button id="open-projection-settings" type="button"><span><strong>Planning dates and funds</strong><small id="projection-settings-summary">Set the period used by projections</small></span><b>›</b></button>
           <button id="open-data-privacy" type="button"><span><strong>Data and privacy</strong><small id="storage-summary">Preparing local storage…</small></span><b>›</b></button>
         </div>
         <p class="privacy-note"><span aria-hidden="true">●</span> No bank login, analytics, or advertising connections.</p>
@@ -303,13 +303,13 @@ app.innerHTML = `
       <div class="manager-dialog__header">
         <div>
           <p class="section-label">Forecast inputs</p>
-          <h2 id="projection-settings-title">MBA dates and funds</h2>
+          <h2 id="projection-settings-title">Planning dates and funds</h2>
         </div>
         <button class="icon-button" id="close-projection-settings" type="button" aria-label="Close projection settings">×</button>
       </div>
       <p class="manager-intro">These values stay on this device and can be changed at any time.</p>
       <form id="projection-settings-form" class="edit-form">
-        <label class="field-label" for="mba-start-date">MBA start date</label>
+        <label class="field-label" for="mba-start-date">Planning start date</label>
         <input id="mba-start-date" type="date" />
         <label class="field-label" for="graduation-date">Graduation date</label>
         <input id="graduation-date" type="date" />
@@ -392,9 +392,9 @@ app.innerHTML = `
   </div>
 
   <section class="privacy-cover" id="privacy-cover" aria-labelledby="privacy-cover-title" hidden>
-    <div class="privacy-cover__mark" aria-hidden="true">H</div>
+    <div class="privacy-cover__mark" aria-hidden="true">5s</div>
     <p class="section-label">Privacy screen</p>
-    <h2 id="privacy-cover-title">HBS Budget is covered</h2>
+    <h2 id="privacy-cover-title">Your budget is covered</h2>
     <p>Your financial details stay hidden until you’re ready.</p>
     <button class="primary-button" id="dismiss-privacy-cover" type="button">Continue</button>
   </section>

@@ -21,7 +21,7 @@ function announceDataChanged(): void {
 }
 
 function backupFilename(now = new Date()): string {
-  return `hbs-budget-backup-${now.toISOString().slice(0, 10)}.json`;
+  return `five-seconds-budgeting-backup-${now.toISOString().slice(0, 10)}.json`;
 }
 
 export function setupPrivacyAndData(): void {
@@ -192,7 +192,7 @@ export function setupPrivacyAndData(): void {
       openDialog(restoreDialog);
     } catch {
       pendingRestore = null;
-      showFeedback("This file is not a valid HBS Budget backup. Nothing was changed.", true);
+      showFeedback("This file is not a valid 5 Seconds Budgeting backup. Nothing was changed.", true);
     }
   });
 

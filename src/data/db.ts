@@ -8,6 +8,7 @@ import {
 import { assertValidTransaction } from "../domain/validation";
 import type { BudgetBackup } from "../domain/backup";
 
+// Keep the original database key so existing users retain their local data after rebranding.
 export const DATABASE_NAME = "hbs-student-budget";
 const DATABASE_VERSION = 1;
 

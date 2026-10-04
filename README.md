@@ -1,6 +1,6 @@
-# HBS Budget
+# 5 Seconds Budgeting
 
-A private, local-first budgeting web app for an MBA student. It supports fast current and historical expense entry, editable categories, monthly cash-outflow views, MBA program projections, offline use, and local backup and restore.
+A fast, private, local-first budgeting web app for people who want clarity without busywork. It supports current and historical expense entry, editable categories, monthly cash-outflow views, configurable long-range projections, offline use, and local backup and restore.
 
 ## Privacy model
 

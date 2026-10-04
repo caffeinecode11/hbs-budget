@@ -21,7 +21,7 @@ for (const file of shellFiles.filter((item) => item !== "./")) {
 }
 const version = versionHash.digest("hex").slice(0, 12);
 
-const serviceWorker = `const CACHE_NAME = "hbs-budget-shell-${version}";
+const serviceWorker = `const CACHE_NAME = "five-seconds-budget-shell-${version}";
 const APP_SHELL = ${JSON.stringify(shellFiles, null, 2)};
 
 self.addEventListener("install", (event) => {

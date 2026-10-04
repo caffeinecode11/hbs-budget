@@ -177,7 +177,7 @@ export function setupOverview(): void {
       }
 
       if (!settings.mbaStartDate || !settings.graduationDate) {
-        assumptions.textContent = "Add MBA start and graduation dates to calculate a forecast.";
+        assumptions.textContent = "Add planning start and end dates to calculate a forecast.";
         settingsSummary.textContent = "Set the period used by projections";
       } else if (projection.runRateCents === null) {
         assumptions.textContent = "Forecast unavailable until at least one past month with spending is marked complete.";
@@ -229,12 +229,12 @@ export function setupOverview(): void {
     if (!currentSettings) return;
     const funds = parseAvailableFunds(availableFunds.value);
     if (!startDate.value || !graduationDate.value) {
-      settingsError.textContent = "Enter both MBA dates.";
+      settingsError.textContent = "Enter both planning dates.";
       settingsError.hidden = false;
       return;
     }
     if (startDate.value > graduationDate.value) {
-      settingsError.textContent = "Graduation must be after the MBA start date.";
+      settingsError.textContent = "The planning end date must be after the start date.";
       settingsError.hidden = false;
       return;
     }

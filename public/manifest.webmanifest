@@ -1,14 +1,14 @@
 {
-  "name": "HBS Student Budget",
-  "short_name": "HBS Budget",
-  "description": "A private, local-first MBA spending tracker.",
+  "name": "5 Seconds Budgeting",
+  "short_name": "5 Seconds",
+  "description": "Fast, private budgeting without the busywork.",
   "id": "./",
   "start_url": "./?source=homescreen#add",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#f7f3ee",
-  "theme_color": "#9b1c31",
+  "theme_color": "#0f766e",
   "icons": [
     {
       "src": "./icons/icon-192.png",

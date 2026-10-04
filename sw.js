@@ -1,4 +1,4 @@
-const CACHE_NAME = "hbs-budget-shell-38bfde644d6f";
+const CACHE_NAME = "five-seconds-budget-shell-9dc56e8d7fe2";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,8 +6,8 @@ const APP_SHELL = [
   "./icons/icon-180.png",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
-  "./assets/index-o4fPY0Ze.js",
-  "./assets/index-fCyiKKqG.css"
+  "./assets/index-DhmnsZFI.js",
+  "./assets/index-kGpkuUXc.css"
 ];
 
 self.addEventListener("install", (event) => {

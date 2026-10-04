@@ -1,0 +1,18 @@
+{
+  "name": "hbs-budget",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --base=./",
+    "build": "tsc && vite build --base=./ && node scripts/generate-sw.mjs",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "^6.2.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12",
+    "vitest": "^5.0.3"
+  }
+}

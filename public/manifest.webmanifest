@@ -1,0 +1,26 @@
+{
+  "name": "HBS Student Budget",
+  "short_name": "HBS Budget",
+  "description": "A private, local-first MBA spending tracker.",
+  "id": "./",
+  "start_url": "./?source=homescreen#add",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7f3ee",
+  "theme_color": "#9b1c31",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
